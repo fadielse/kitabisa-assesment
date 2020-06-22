@@ -136,7 +136,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        let movieList = presenter.getlist()
+        let movieList = presenter.getList()
         
         if movieList.indices.contains(indexPath.row) {
             cell.setupView(withMovie: movieList[indexPath.row])
@@ -146,7 +146,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let movieList = presenter.getlist()
+        let movieList = presenter.getList()
         
         if movieList.indices.contains(indexPath.row) {
             showMovieDetail(withMovie: movieList[indexPath.row])

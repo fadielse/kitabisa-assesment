@@ -13,7 +13,7 @@ protocol HomeViewPresenter: class {
     init(view: HomeView)
     func viewDidLoad()
     func getMovieList(withSelectedCategory selectedCategory: HomeViewController.MovieCategory)
-    func getlist() -> [MovieListItem]
+    func getList() -> [MovieListItem]
     func getListCount() -> Int
 }
 
@@ -82,7 +82,7 @@ class HomePresenter: HomeViewPresenter {
         }
     }
     
-    func getlist() -> [MovieListItem] {
+    func getList() -> [MovieListItem] {
         return movieList
     }
     

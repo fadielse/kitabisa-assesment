@@ -12,11 +12,15 @@ import SwiftyJSON
 protocol MyFavoriteViewPresenter: class {
     init(view: MyFavoriteView)
     func viewDidLoad()
-    func getMovieList()
+    func getFavoriteMovies()
+    func getList() -> [MovieListItem]
+    func getListCount() -> Int
 }
 
 protocol MyFavoriteView: class {
     func setupView()
+    func showGetFavoriteMoviesSuccess()
+    func showGetFavoriteMoviesFailed(withMessage message: String)
 }
 
 class MyFavoritePresenter: MyFavoriteViewPresenter {
@@ -27,6 +31,7 @@ class MyFavoritePresenter: MyFavoriteViewPresenter {
     }
     
     let view: MyFavoriteView
+    var favoriteMovies: [MovieListItem] = []
     
     required init(view: MyFavoriteView) {
         self.view = view
@@ -34,10 +39,23 @@ class MyFavoritePresenter: MyFavoriteViewPresenter {
     
     func viewDidLoad() {
         view.setupView()
-        getMovieList()
+        getFavoriteMovies()
     }
     
-    func getMovieList() {
-        
+    func getFavoriteMovies() {
+        if let favoriteList = StorageUtils.favoriteList {
+            self.favoriteMovies = favoriteList
+            view.showGetFavoriteMoviesSuccess()
+        } else {
+            view.showGetFavoriteMoviesFailed(withMessage: "Failed to get favorite movies.")
+        }
+    }
+    
+    func getList() -> [MovieListItem] {
+        return favoriteMovies
+    }
+    
+    func getListCount() -> Int {
+        return favoriteMovies.count
     }
 }

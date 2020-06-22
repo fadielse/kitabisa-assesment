@@ -36,6 +36,17 @@ class MyFavoriteViewController: BaseViewController {
         super.viewDidLoad()
         presenter.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.getFavoriteMovies()
+    }
+    
+    private func showMovieDetail(withMovie movie: MovieListItem) {
+        let movieDetailVc = MovieDetailViewController.createModule()
+        movieDetailVc.presenter.movie = movie
+        self.navigationController?.pushViewController(movieDetailVc, animated: true)
+    }
 }
 
 // MARK: - MyFavoriteView
@@ -50,19 +61,42 @@ extension MyFavoriteViewController: MyFavoriteView {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
     }
+    
+    func showGetFavoriteMoviesSuccess() {
+        tableView.reloadData()
+    }
+    
+    func showGetFavoriteMoviesFailed(withMessage message: String) {
+        showAlert(andMessage: message)
+    }
 }
 
 // MARK: - UITableViewDelegate
 
 extension MyFavoriteViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return presenter.getListCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? MovieTableViewCell else {
             return UITableViewCell()
         }
+        
+        let movieList = presenter.getList()
+        
+        if movieList.indices.contains(indexPath.row) {
+            cell.setupView(withMovie: movieList[indexPath.row])
+        }
+
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movieList = presenter.getList()
+        
+        if movieList.indices.contains(indexPath.row) {
+            showMovieDetail(withMovie: movieList[indexPath.row])
+        }
     }
 }
