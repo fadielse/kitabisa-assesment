@@ -80,8 +80,9 @@ class HomeViewController: BaseViewController {
         pickerView.showPicker()
     }
     
-    private func showMovieDetail() {
+    private func showMovieDetail(withMovie movie: MovieList.Item) {
         let movieDetailVc = MovieDetailViewController.createModule()
+        movieDetailVc.presenter.movieId = movie.id
         self.navigationController?.pushViewController(movieDetailVc, animated: true)
     }
 }
@@ -145,6 +146,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showMovieDetail()
+        let movieList = presenter.getlist()
+        
+        if movieList.indices.contains(indexPath.row) {
+            showMovieDetail(withMovie: movieList[indexPath.row])
+        }
     }
 }

@@ -21,9 +21,9 @@ class MovieDetail {
             return nil
         }
         self.title = json["title"].string
-        self.releaseDate = json["releaseDate"].string
+        self.releaseDate = json["release_date"].string
         self.overview = json["overview"].string
-        self.posterPath = json["posterPath"].string
+        self.posterPath = json["poster_path"].string
     }
     
     func getPosterPageUrl() -> URL? {

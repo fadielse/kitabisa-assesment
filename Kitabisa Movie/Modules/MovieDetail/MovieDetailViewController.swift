@@ -49,5 +49,31 @@ class MovieDetailViewController: BaseViewController {
 extension MovieDetailViewController: MovieDetailView {
     func setupView() {
         setupBackNavigation()
+        
+        labelTitle.text = nil
+        labelDate.text = nil
+        labelOverview.text = nil
+    }
+    
+    func showLoading() {
+        showSpinner(onView: view)
+    }
+    
+    func hideLoading() {
+        removeSpinner()
+    }
+    
+    func showGetMovieDetailSuccess(withMovieDetail movieDetail: MovieDetail) {
+        if let posterImageUrl = movieDetail.getPosterPageUrl() {
+            imageMovie.sd_setImage(with: posterImageUrl, completed: nil)
+        }
+        
+        labelTitle.text = movieDetail.title
+        labelDate.text = movieDetail.releaseDate
+        labelOverview.text = movieDetail.overview
+    }
+    
+    func showGetMovieDetailFailed(withMessage message: String) {
+        showAlert(andMessage: message)
     }
 }
