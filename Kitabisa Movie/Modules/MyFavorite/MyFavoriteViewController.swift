@@ -63,7 +63,6 @@ extension MyFavoriteViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? MovieTableViewCell else {
             return UITableViewCell()
         }
-        cell.setupView()
         return cell
     }
 }

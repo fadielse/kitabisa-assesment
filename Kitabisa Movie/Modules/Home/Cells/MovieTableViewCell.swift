@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MovieTableViewCell: UITableViewCell {
 
@@ -16,12 +17,22 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var labelReleaseDate: UILabel!
     @IBOutlet weak var labelOverview: UILabel!
     
+    var movie: MovieList.Item?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func setupView() {
+    func setupView(withMovie movie: MovieList.Item) {
         viewContainer.layer.setRadius(withPoints: 8.0)
         viewContainer.layer.setShadow()
+        
+        if let posterImageUrl = movie.getPosterPageUrl() {
+            imageMovie.sd_setImage(with: posterImageUrl, completed: nil)
+        }
+        
+        labelTitle.text = movie.title
+        labelReleaseDate.text = movie.release_date
+        labelOverview.text = movie.overview
     }
 }

@@ -32,7 +32,7 @@ class PickerView: UITextField, UIPickerViewDataSource, UIPickerViewDelegate {
     var items: [HomeViewController.MovieCategory] = []
     var didSelectItem: ((HomeViewController.MovieCategory) -> Void)?
 
-    private var selectedItem: HomeViewController.MovieCategory?
+    var selectedItem: HomeViewController.MovieCategory?
 
     init() {
         super.init(frame: .zero)

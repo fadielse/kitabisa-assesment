@@ -20,6 +20,7 @@ class HomeViewController: BaseViewController {
     
     enum MovieCategory: String {
         case popular = "Popular"
+        case upcoming = "Upcoming"
         case topRated = "Top Rated"
         case nowPlaying = "Now Playing"
     }
@@ -30,8 +31,9 @@ class HomeViewController: BaseViewController {
 
     private lazy var pickerView: PickerView = {
         let pickerView = PickerView()
+        pickerView.selectedItem = .popular
         pickerView.didSelectItem = { [weak self] item in
-            self?.presenter.getMovieList()
+            self?.presenter.getMovieList(withSelectedCategory: item)
         }
         return pickerView
     }()
@@ -39,7 +41,7 @@ class HomeViewController: BaseViewController {
     var presenter: HomeViewPresenter!
     
     let cellId = "MovieTableViewCell"
-    let categories: [MovieCategory] = [.popular, .topRated, .nowPlaying]
+    let categories: [MovieCategory] = [.popular, .upcoming, .topRated, .nowPlaying]
     
     // MARK: Lifecycle
     
@@ -77,6 +79,11 @@ class HomeViewController: BaseViewController {
     @objc private func showCategories() {
         pickerView.showPicker()
     }
+    
+    private func showMovieDetail() {
+        let movieDetailVc = MovieDetailViewController.createModule()
+        self.navigationController?.pushViewController(movieDetailVc, animated: true)
+    }
 }
 
 // MARK: - HomeView
@@ -100,11 +107,19 @@ extension HomeViewController: HomeView {
     }
     
     func showLoading() {
-        
+        showSpinner(onView: view)
     }
     
     func hideLoading() {
-        
+        removeSpinner()
+    }
+    
+    func showGetMovieListSuccess() {
+        tableView.reloadData()
+    }
+    
+    func showGetMovieListFailed(withMessage message: String) {
+        showAlert(andMessage: message)
     }
 }
 
@@ -112,14 +127,24 @@ extension HomeViewController: HomeView {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return presenter.getListCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? MovieTableViewCell else {
             return UITableViewCell()
         }
-        cell.setupView()
+        
+        let movieList = presenter.getlist()
+        
+        if movieList.indices.contains(indexPath.row) {
+            cell.setupView(withMovie: movieList[indexPath.row])
+        }
+
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showMovieDetail()
     }
 }

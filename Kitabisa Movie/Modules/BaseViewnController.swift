@@ -12,6 +12,8 @@ class BaseViewController: UIViewController {
     
     private static let iconBack = UIImage(named: "ic_back")?.withRenderingMode(.alwaysTemplate)
     
+    var indicator : UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,6 +41,38 @@ class BaseViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         } else {
             _ = self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    // Show alert view
+    func showAlert(withTitle title: String? = nil, andMessage message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    // Spinner Loading
+    func showSpinner(onView : UIView) {
+        let indicatorView = UIView.init(frame: onView.bounds)
+        let uiaiv = UIActivityIndicatorView.init(style: .whiteLarge)
+        
+        indicatorView.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)
+        uiaiv.startAnimating()
+        uiaiv.center = indicatorView.center
+        
+        DispatchQueue.main.async {
+            indicatorView.addSubview(uiaiv)
+            onView.addSubview(indicatorView)
+        }
+        
+        indicator = indicatorView
+    }
+    
+    func removeSpinner() {
+        DispatchQueue.main.async {
+            self.indicator?.removeFromSuperview()
+            self.indicator = nil
         }
     }
 }

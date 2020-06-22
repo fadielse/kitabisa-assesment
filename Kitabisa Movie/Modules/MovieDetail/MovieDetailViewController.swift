@@ -19,6 +19,11 @@ class MovieDetailViewController: BaseViewController {
     }
     
     // MARK: Properties
+    @IBOutlet weak var imageMovie: UIImageView!
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelDate: UILabel!
+    @IBOutlet weak var buttonFavorite: UIButton!
+    @IBOutlet weak var labelOverview: UILabel!
     
     var presenter: MovieDetailViewPresenter!
     
@@ -31,11 +36,18 @@ class MovieDetailViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewDidLoad()
+    }
+    
+    @IBAction func onButtonFavoriteTapped(_ sender: Any) {
+        
     }
 }
 
 // MARK: - MovieDetailView
 
 extension MovieDetailViewController: MovieDetailView {
-    // TODO: implement view methods
+    func setupView() {
+        setupBackNavigation()
+    }
 }

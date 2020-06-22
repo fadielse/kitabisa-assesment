@@ -11,11 +11,11 @@ import SwiftyJSON
 
 protocol MovieDetailViewPresenter: class {
     init(view: MovieDetailView)
-    // TODO: Declare view presenter methods
+    func viewDidLoad()
 }
 
 protocol MovieDetailView: class {
-    // TODO: Declare view methods
+    func setupView()
 }
 
 class MovieDetailPresenter: MovieDetailViewPresenter {
@@ -31,5 +31,7 @@ class MovieDetailPresenter: MovieDetailViewPresenter {
         self.view = view
     }
     
-    // TODO: Implement view presenter methods
+    func viewDidLoad() {
+        view.setupView()
+    }
 }
