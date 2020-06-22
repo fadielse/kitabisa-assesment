@@ -40,6 +40,7 @@
 		FFDB220824A1024500D01A5F /* MovieDetailDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB220724A1024500D01A5F /* MovieDetailDAO.swift */; };
 		FFDB220A24A1025700D01A5F /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB220924A1025700D01A5F /* MovieDetail.swift */; };
 		FFDB220C24A1088600D01A5F /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB220B24A1088600D01A5F /* AppConstant.swift */; };
+		FFDB220F24A11D4A00D01A5F /* StorageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDB220E24A11D4A00D01A5F /* StorageUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		FFDB220724A1024500D01A5F /* MovieDetailDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailDAO.swift; sourceTree = "<group>"; };
 		FFDB220924A1025700D01A5F /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		FFDB220B24A1088600D01A5F /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		FFDB220E24A11D4A00D01A5F /* StorageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				FF8E3B0E249F3AB900E5C6AC /* Models */,
 				FF8E3B10249F3AD100E5C6AC /* Modules */,
 				FF8E3B0B249F3A7500E5C6AC /* SupportFiles */,
+				FFDB220D24A11D2A00D01A5F /* Utils */,
 			);
 			path = "Kitabisa Movie";
 			sourceTree = "<group>";
@@ -345,6 +348,14 @@
 				FFDB220924A1025700D01A5F /* MovieDetail.swift */,
 			);
 			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		FFDB220D24A11D2A00D01A5F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFDB220E24A11D4A00D01A5F /* StorageUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +570,7 @@
 				FFDB21F924A0FE2D00D01A5F /* MovieListRequest.swift in Sources */,
 				FF8E3B2A249F4C9000E5C6AC /* HomeViewController.swift in Sources */,
 				FFDB21EC249FBD3400D01A5F /* PickerView.swift in Sources */,
+				FFDB220F24A11D4A00D01A5F /* StorageUtils.swift in Sources */,
 				FFDB21F424A0F93B00D01A5F /* BaseDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

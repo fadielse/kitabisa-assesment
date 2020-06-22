@@ -40,7 +40,11 @@ class MovieDetailViewController: BaseViewController {
     }
     
     @IBAction func onButtonFavoriteTapped(_ sender: Any) {
-        
+        if presenter.isMovieExistInFavorite() {
+            presenter.removeMovieFromFavorite()
+        } else {
+            presenter.addMovieToFavorite()
+        }
     }
 }
 
@@ -49,6 +53,12 @@ class MovieDetailViewController: BaseViewController {
 extension MovieDetailViewController: MovieDetailView {
     func setupView() {
         setupBackNavigation()
+        
+        if presenter.isMovieExistInFavorite() {
+            buttonFavorite.setImage(#imageLiteral(resourceName: "ic_favorite_fill"), for: .normal)
+        } else {
+            buttonFavorite.setImage(#imageLiteral(resourceName: "ic_favorite_empty"), for: .normal)
+        }
         
         labelTitle.text = nil
         labelDate.text = nil
@@ -75,5 +85,13 @@ extension MovieDetailViewController: MovieDetailView {
     
     func showGetMovieDetailFailed(withMessage message: String) {
         showAlert(andMessage: message)
+    }
+    
+    func updateButtonFavorite() {
+        if presenter.isMovieExistInFavorite() {
+            buttonFavorite.setImage(#imageLiteral(resourceName: "ic_favorite_fill"), for: .normal)
+        } else {
+            buttonFavorite.setImage(#imageLiteral(resourceName: "ic_favorite_empty"), for: .normal)
+        }
     }
 }

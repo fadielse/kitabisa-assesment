@@ -17,13 +17,13 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var labelReleaseDate: UILabel!
     @IBOutlet weak var labelOverview: UILabel!
     
-    var movie: MovieList.Item?
+    var movie: MovieListItem?
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func setupView(withMovie movie: MovieList.Item) {
+    func setupView(withMovie movie: MovieListItem) {
         viewContainer.layer.setRadius(withPoints: 8.0)
         viewContainer.layer.setShadow()
         
@@ -32,7 +32,7 @@ class MovieTableViewCell: UITableViewCell {
         }
         
         labelTitle.text = movie.title
-        labelReleaseDate.text = movie.release_date
+        labelReleaseDate.text = movie.releaseDate
         labelOverview.text = movie.overview
     }
 }

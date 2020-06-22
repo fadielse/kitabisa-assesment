@@ -14,7 +14,7 @@ class MovieList {
     var page: Int?
     var totalResults: Int?
     var totalPages: Int?
-    var results: [Item] = []
+    var results: [MovieListItem] = []
     
     init?(json: JSON?) {
         guard let json = json else {
@@ -25,36 +25,52 @@ class MovieList {
         self.totalPages = json["total_pages"].int
         
         for result in json["results"].arrayValue {
-            if let item = Item(json: result) {
+            if let item = MovieListItem(json: result) {
                 self.results.append(item)
             }
         }
     }
+}
+
+class MovieListItem: Codable {
     
-    class Item {
-        
-        var posterPath: String?
-        var id: Int?
-        var title: String?
-        var overview: String?
-        var release_date: String?
-        
-        init?(json: JSON?) {
-            guard let json = json else {
-                return nil
-            }
-            self.posterPath = json["poster_path"].string
-            self.id = json["id"].int
-            self.title = json["title"].string
-            self.overview = json["overview"].string
-            self.release_date = json["release_date"].string
+    var posterPath: String?
+    var id: Int?
+    var title: String?
+    var overview: String?
+    var releaseDate: String?
+    
+    init?(json: JSON?) {
+        guard let json = json else {
+            return nil
         }
-        
-        func getPosterPageUrl() -> URL? {
-            guard let posterPath = self.posterPath else {
-                return nil
-            }
-            return URL(string: "\(AppConstant.imageBasePath)\(posterPath)") ?? nil
+        self.posterPath = json["poster_path"].string
+        self.id = json["id"].int
+        self.title = json["title"].string
+        self.overview = json["overview"].string
+        self.releaseDate = json["release_date"].string
+    }
+    
+//    func encode(with coder: NSCoder) {
+//        coder.encode(posterPath, forKey: "poster_path")
+//        coder.encode(id, forKey: "id")
+//        coder.encode(title, forKey: "title")
+//        coder.encode(overview, forKey: "overview")
+//        coder.encode(releaseDate, forKey: "releaseDate")
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        let posterPath = coder.decodeObject(forKey: "posterPath") as! String
+//        let id = coder.decodeInteger(forKey: "id")
+//        let title = coder.decodeObject(forKey: "title") as! String
+//        let overview = coder.decodeObject(forKey: "overview") as! String
+//        let releaseDate = coder.decodeObject(forKey: "releaseDate") as! String
+//    }
+    
+    func getPosterPageUrl() -> URL? {
+        guard let posterPath = self.posterPath else {
+            return nil
         }
+        return URL(string: "\(AppConstant.imageBasePath)\(posterPath)") ?? nil
     }
 }

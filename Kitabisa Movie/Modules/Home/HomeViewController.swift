@@ -80,9 +80,9 @@ class HomeViewController: BaseViewController {
         pickerView.showPicker()
     }
     
-    private func showMovieDetail(withMovie movie: MovieList.Item) {
+    private func showMovieDetail(withMovie movie: MovieListItem) {
         let movieDetailVc = MovieDetailViewController.createModule()
-        movieDetailVc.presenter.movieId = movie.id
+        movieDetailVc.presenter.movie = movie
         self.navigationController?.pushViewController(movieDetailVc, animated: true)
     }
 }

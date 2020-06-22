@@ -11,10 +11,14 @@ import SwiftyJSON
 
 protocol MovieDetailViewPresenter: class {
     init(view: MovieDetailView)
-    var movieId: Int? { get set }
+    var movie: MovieListItem? { get set }
+    var isMyFavorite: Bool { get set }
 
     func viewDidLoad()
     func getMovieDetail(withMovieId movieId: Int)
+    func addMovieToFavorite()
+    func removeMovieFromFavorite()
+    func isMovieExistInFavorite() -> Bool
 }
 
 protocol MovieDetailView: class {
@@ -23,6 +27,7 @@ protocol MovieDetailView: class {
     func hideLoading()
     func showGetMovieDetailSuccess(withMovieDetail movieDetail: MovieDetail)
     func showGetMovieDetailFailed(withMessage message: String)
+    func updateButtonFavorite()
 }
 
 class MovieDetailPresenter: MovieDetailViewPresenter {
@@ -33,13 +38,14 @@ class MovieDetailPresenter: MovieDetailViewPresenter {
     }
     
     let view: MovieDetailView
-    var movieId: Int? {
+    var movie: MovieListItem? {
         didSet {
-            if let movieId = movieId {
+            if let movieId = movie?.id {
                 getMovieDetail(withMovieId: movieId)
             }
         }
     }
+    var isMyFavorite: Bool = false
     var movieDetail: MovieDetail?
     
     required init(view: MovieDetailView) {
@@ -74,5 +80,40 @@ class MovieDetailPresenter: MovieDetailViewPresenter {
             self.view.hideLoading()
             self.view.showGetMovieDetailFailed(withMessage: error.getExceptionErrorMessage())
         }
+    }
+    
+    func isMovieExistInFavorite() -> Bool {
+        guard let favoriteList = StorageUtils.favoriteList else {
+            return false
+        }
+        return favoriteList.contains(where: { $0.id == movie?.id })
+    }
+    
+    func addMovieToFavorite() {
+        var newFavoriteList: [MovieListItem] = []
+        if let favoriteList = StorageUtils.favoriteList {
+            newFavoriteList = favoriteList
+        }
+        
+        if let movie = movie {
+            newFavoriteList.append(movie)
+            StorageUtils.favoriteList = newFavoriteList
+        }
+        
+        view.updateButtonFavorite()
+    }
+    
+    func removeMovieFromFavorite() {
+        var newFavoriteList: [MovieListItem] = []
+        if let favoriteList = StorageUtils.favoriteList {
+            newFavoriteList = favoriteList
+        }
+        
+        if let movie = movie, let indexToRemove = newFavoriteList.firstIndex(where: { $0.id == movie.id }) {
+            newFavoriteList.remove(at: indexToRemove)
+            StorageUtils.favoriteList = newFavoriteList
+        }
+        
+        view.updateButtonFavorite()
     }
 }
