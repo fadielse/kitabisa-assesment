@@ -1,0 +1,412 @@
+{
+  "results" : [
+    {
+      "id" : 338762,
+      "adult" : false,
+      "backdrop_path" : "\/lP5eKh8WOcPysfELrUpGhHJGZEH.jpg",
+      "original_title" : "Bloodshot",
+      "genre_ids" : [
+        28,
+        878
+      ],
+      "vote_average" : 7,
+      "popularity" : 66.197000000000003,
+      "poster_path" : "\/8WUVHemHFH2ZIP6NWkwlHWsyrEL.jpg",
+      "title" : "Bloodshot",
+      "overview" : "After he and his wife are murdered, marine Ray Garrison is resurrected by a team of scientists. Enhanced with nanotechnology, he becomes a superhuman, biotech killing machine—'Bloodshot'. As Ray first trains with fellow super-soldiers, he cannot recall anything from his former life. But when his memories flood back and he remembers the man that killed both him and his wife, he breaks out of the facility to get revenge, only to discover that there's more to the conspiracy than he thought.",
+      "original_language" : "en",
+      "vote_count" : 2681,
+      "release_date" : "2020-03-05",
+      "video" : false
+    },
+    {
+      "id" : 696374,
+      "adult" : false,
+      "backdrop_path" : "\/fDTPiqCynPQIkojfzdeyRHpw99S.jpg",
+      "original_title" : "Gabriel's Inferno",
+      "genre_ids" : [
+        10749
+      ],
+      "vote_average" : 8.8000000000000007,
+      "popularity" : 66.102000000000004,
+      "poster_path" : "\/oyG9TL7FcRP4EZ9Vid6uKzwdndz.jpg",
+      "title" : "Gabriel's Inferno",
+      "overview" : "An intriguing and sinful exploration of seduction, forbidden love, and redemption, Gabriel's Inferno is a captivating and wildly passionate tale of one man's escape from his own personal hell as he tries to earn the impossible--forgiveness and love.",
+      "original_language" : "en",
+      "vote_count" : 208,
+      "release_date" : "2020-05-29",
+      "video" : false
+    },
+    {
+      "id" : 514847,
+      "adult" : false,
+      "backdrop_path" : "\/naXUDz0VGK7aaPlEpsuYW8kNVsr.jpg",
+      "original_title" : "The Hunt",
+      "genre_ids" : [
+        28,
+        27,
+        53
+      ],
+      "vote_average" : 6.7000000000000002,
+      "popularity" : 65.834000000000003,
+      "poster_path" : "\/wxPhn4ef1EAo5njxwBkAEVrlJJG.jpg",
+      "title" : "The Hunt",
+      "overview" : "Twelve strangers wake up in a clearing. They don't know where they are—or how they got there. In the shadow of a dark internet conspiracy theory, ruthless elitists gather at a remote location to hunt humans for sport. But their master plan is about to be derailed when one of the hunted turns the tables on her pursuers.",
+      "original_language" : "en",
+      "vote_count" : 964,
+      "release_date" : "2020-03-11",
+      "video" : false
+    },
+    {
+      "id" : 508439,
+      "adult" : false,
+      "backdrop_path" : "\/dW6yBuKwiMeronJZw8kozYLMorB.jpg",
+      "original_title" : "Onward",
+      "genre_ids" : [
+        12,
+        16,
+        35,
+        14,
+        10751
+      ],
+      "vote_average" : 7.9000000000000004,
+      "popularity" : 62.143999999999998,
+      "poster_path" : "\/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg",
+      "title" : "Onward",
+      "overview" : "In a suburban fantasy world, two teenage elf brothers embark on an extraordinary quest to discover if there is still a little magic left out there.",
+      "original_language" : "en",
+      "vote_count" : 2285,
+      "release_date" : "2020-02-29",
+      "video" : false
+    },
+    {
+      "id" : 522627,
+      "adult" : false,
+      "backdrop_path" : "\/tintsaQ0WLzZsTMkTiqtMB3rfc8.jpg",
+      "original_title" : "The Gentlemen",
+      "genre_ids" : [
+        28,
+        35,
+        80
+      ],
+      "vote_average" : 7.7000000000000002,
+      "popularity" : 55.551000000000002,
+      "poster_path" : "\/jtrhTYB7xSrJxR1vusu99nvnZ1g.jpg",
+      "title" : "The Gentlemen",
+      "overview" : "American expat Mickey Pearson has built a highly profitable marijuana empire in London. When word gets out that he’s looking to cash out of the business forever it triggers plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
+      "original_language" : "en",
+      "vote_count" : 1469,
+      "release_date" : "2019-12-03",
+      "video" : false
+    },
+    {
+      "id" : 522098,
+      "adult" : false,
+      "backdrop_path" : "\/cQIusqAdSz0AMGSpHGHQkD6iStR.jpg",
+      "original_title" : "Babyteeth",
+      "genre_ids" : [
+        35,
+        18
+      ],
+      "vote_average" : 4.4000000000000004,
+      "popularity" : 51.225999999999999,
+      "poster_path" : "\/aINpljdt3VVMrCLtJW4BektwYOp.jpg",
+      "title" : "Babyteeth",
+      "overview" : "A terminally ill teen upsets her parents when she falls in love with a small-time drug dealer.",
+      "original_language" : "en",
+      "vote_count" : 9,
+      "release_date" : "2020-06-18",
+      "video" : false
+    },
+    {
+      "id" : 451184,
+      "vote_average" : 6.5999999999999996,
+      "genre_ids" : [
+        18,
+        36,
+        53
+      ],
+      "original_title" : "Wasp Network",
+      "backdrop_path" : "\/72r4uAQGsa8KEv0DB2TpSu31lEB.jpg",
+      "adult" : false,
+      "popularity" : 48.465000000000003,
+      "poster_path" : "\/fOvqEunubL3wPskvtk2Ficfl0pH.jpg",
+      "title" : "Wasp Network",
+      "overview" : "Havana, Cuba, 1990. René González, an airplane pilot, unexpectedly flees the country, leaving behind his wife Olga and his daughter Irma, and begins a new life in Miami, where he becomes a member of an anti-Castro organization.",
+      "original_language" : "en",
+      "vote_count" : 63,
+      "release_date" : "2020-01-29",
+      "video" : false
+    },
+    {
+      "id" : 458305,
+      "adult" : false,
+      "backdrop_path" : "\/jZ4YdDCnfK4cO13do9J4JaT8d2O.jpg",
+      "original_title" : "Vivarium",
+      "genre_ids" : [
+        27,
+        878,
+        53
+      ],
+      "vote_average" : 5.7999999999999998,
+      "popularity" : 46.545999999999999,
+      "poster_path" : "\/myf3qzpeN0JbuFRPwSpJcz7rmAT.jpg",
+      "title" : "Vivarium",
+      "overview" : "A young woman and her fiancé are in search of the perfect starter home. After following a mysterious real estate agent to a new housing development, the couple finds themselves trapped in a maze of identical houses and forced to raise an otherworldly child.",
+      "original_language" : "en",
+      "vote_count" : 391,
+      "release_date" : "2019-07-12",
+      "video" : false
+    },
+    {
+      "id" : 443791,
+      "adult" : false,
+      "backdrop_path" : "\/ww7eC3BqSbFsyE5H5qMde8WkxJ2.jpg",
+      "original_title" : "Underwater",
+      "genre_ids" : [
+        28,
+        27,
+        878,
+        53
+      ],
+      "vote_average" : 6.4000000000000004,
+      "popularity" : 46.283999999999999,
+      "poster_path" : "\/gzlbb3yeVISpQ3REd3Ga1scWGTU.jpg",
+      "title" : "Underwater",
+      "overview" : "After an earthquake destroys their underwater station, six researchers must navigate two miles along the dangerous, unknown depths of the ocean floor to make it to safety in a race against time.",
+      "original_language" : "en",
+      "vote_count" : 1318,
+      "release_date" : "2020-01-08",
+      "video" : false
+    },
+    {
+      "id" : 339095,
+      "adult" : false,
+      "backdrop_path" : "\/t93doi7EzoqLFckidrGGnukFPwd.jpg",
+      "original_title" : "The Last Days of American Crime",
+      "genre_ids" : [
+        28,
+        80,
+        53
+      ],
+      "vote_average" : 5.5999999999999996,
+      "popularity" : 45.292999999999999,
+      "poster_path" : "\/ygCQnDEqUEIamBpdQdDYnFfxvgM.jpg",
+      "title" : "The Last Days of American Crime",
+      "overview" : "In the not-too-distant future, as a final response to crime and terrorism, the U.S. government plans to broadcast a signal that will make it impossible for anyone to knowingly break the law.",
+      "original_language" : "en",
+      "vote_count" : 186,
+      "release_date" : "2020-06-05",
+      "video" : false
+    },
+    {
+      "id" : 481848,
+      "adult" : false,
+      "backdrop_path" : "\/9sXHqZTet3Zg5tgcc0hCDo8Tn35.jpg",
+      "original_title" : "The Call of the Wild",
+      "genre_ids" : [
+        12,
+        18,
+        10751
+      ],
+      "vote_average" : 7.4000000000000004,
+      "popularity" : 43.661000000000001,
+      "poster_path" : "\/33VdppGbeNxICrFUtW2WpGHvfYc.jpg",
+      "title" : "The Call of the Wild",
+      "overview" : "Buck is a big-hearted dog whose blissful domestic life is turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Yukon during the Gold Rush of the 1890s. As the newest rookie on a mail delivery dog sled team—and later its leader—Buck experiences the adventure of a lifetime, ultimately finding his true place in the world and becoming his own master.",
+      "original_language" : "en",
+      "vote_count" : 1443,
+      "release_date" : "2020-02-19",
+      "video" : false
+    },
+    {
+      "id" : 385103,
+      "adult" : false,
+      "backdrop_path" : "\/fKtYXUhX5fxMxzQfyUcQW9Shik6.jpg",
+      "original_title" : "Scoob!",
+      "genre_ids" : [
+        12,
+        16,
+        35,
+        9648,
+        10751
+      ],
+      "vote_average" : 8,
+      "popularity" : 42.951999999999998,
+      "poster_path" : "\/jHo2M1OiH9Re33jYtUQdfzPeUkx.jpg",
+      "title" : "Scoob!",
+      "overview" : "In Scooby-Doo’s greatest adventure yet, see the never-before told story of how lifelong friends Scooby and Shaggy first met and how they joined forces with young detectives Fred, Velma, and Daphne to form the famous Mystery Inc. Now, with hundreds of cases solved, Scooby and the gang face their biggest, toughest mystery ever: an evil plot to unleash the ghost dog Cerberus upon the world. As they race to stop this global “dogpocalypse,” the gang discovers that Scooby has a secret legacy and an epic destiny greater than anyone ever imagined.",
+      "original_language" : "en",
+      "vote_count" : 1038,
+      "release_date" : "2020-05-15",
+      "video" : false
+    },
+    {
+      "id" : 603,
+      "adult" : false,
+      "backdrop_path" : "\/ByDf0zjLSumz1MP1cDEo2JWVtU.jpg",
+      "original_title" : "The Matrix",
+      "genre_ids" : [
+        28,
+        878
+      ],
+      "vote_average" : 8.0999999999999996,
+      "popularity" : 40.125,
+      "poster_path" : "\/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "title" : "The Matrix",
+      "overview" : "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+      "original_language" : "en",
+      "vote_count" : 17241,
+      "release_date" : "1999-03-30",
+      "video" : false
+    },
+    {
+      "id" : 565743,
+      "adult" : false,
+      "backdrop_path" : "\/lVSMgZUBE4XTVaPBEBAczre4f1W.jpg",
+      "original_title" : "The Vast of Night",
+      "genre_ids" : [
+        18,
+        9648,
+        878
+      ],
+      "vote_average" : 6.5999999999999996,
+      "popularity" : 35.451000000000001,
+      "poster_path" : "\/suORidtGKPO6tWwNqiwGvNo85z3.jpg",
+      "title" : "The Vast of Night",
+      "overview" : "At the dawn of the space-race, two radio-obsessed teens discover a strange frequency over the airwaves in what becomes the most important night of their lives and in the history of their small town.",
+      "original_language" : "en",
+      "vote_count" : 155,
+      "release_date" : "2020-05-15",
+      "video" : false
+    },
+    {
+      "id" : 698783,
+      "adult" : false,
+      "backdrop_path" : "\/smrQPTF62XiEkK5IKxQflaubgBt.jpg",
+      "original_title" : "2 Minutes of Fame",
+      "genre_ids" : [
+        35
+      ],
+      "vote_average" : 7,
+      "popularity" : 34.521999999999998,
+      "poster_path" : "\/qWrPZZL7CC3MqySlOzpXaUWjUrd.jpg",
+      "title" : "2 Minutes of Fame",
+      "overview" : "An up-and-coming stand-up comic moves to L.A. to pursue a film career after video clips of his act make him an online sensation.",
+      "original_language" : "en",
+      "vote_count" : 14,
+      "release_date" : "2020-06-16",
+      "video" : false
+    },
+    {
+      "id" : 568160,
+      "adult" : false,
+      "backdrop_path" : "\/ize3ZieqSy0TCWljmVoEiy8fSFS.jpg",
+      "original_title" : "天気の子",
+      "genre_ids" : [
+        12,
+        16,
+        18,
+        14,
+        10749
+      ],
+      "vote_average" : 8,
+      "popularity" : 33.853000000000002,
+      "poster_path" : "\/qgrk7r1fV4IjuoeiGS5HOhXNdLJ.jpg",
+      "title" : "Weathering with You",
+      "overview" : "Tokyo is currently experiencing rain showers that seem to disrupt the usual pace of everyone living there to no end. Amidst this seemingly eternal downpour arrives the runaway high school student Hodaka Morishima, who struggles to financially support himself—ending up with a job at a small-time publisher. At the same time, the orphaned Hina Amano also strives to find work to sustain herself and her younger brother.\r Both fates intertwine when Hodaka attempts to rescue Hina from shady men, deciding to run away together. Subsequently, Hodaka discovers that Hina has a strange yet astounding power: the ability to call out the sun whenever she prays for it. With Tokyo's unusual weather in mind, Hodaka sees the potential of this ability. He suggests that Hina should become a \"sunshine girl\"—someone who will clear the sky for people when they need it the most.\r Things begin looking up for them at first. However, it is common knowledge that power always comes with a hefty price...",
+      "original_language" : "ja",
+      "vote_count" : 413,
+      "release_date" : "2019-07-19",
+      "video" : false
+    },
+    {
+      "id" : 619264,
+      "adult" : false,
+      "backdrop_path" : "\/3tkDMNfM2YuIAJlvGO6rfIzAnfG.jpg",
+      "original_title" : "El hoyo",
+      "genre_ids" : [
+        18,
+        878,
+        53
+      ],
+      "vote_average" : 7,
+      "popularity" : 33.409999999999997,
+      "poster_path" : "\/8ZX18L5m6rH5viSYpRnTSbb9eXh.jpg",
+      "title" : "The Platform",
+      "overview" : "A mysterious place, an indescribable prison, a deep hole. An unknown number of levels. Two inmates living on each level. A descending platform containing food for all of them. An inhuman fight for survival, but also an opportunity for solidarity…",
+      "original_language" : "es",
+      "vote_count" : 3312,
+      "release_date" : "2019-11-08",
+      "video" : false
+    },
+    {
+      "id" : 501907,
+      "adult" : false,
+      "backdrop_path" : "\/w0tJot6O0UtLVBRIPAdg3dQ2oNO.jpg",
+      "original_title" : "A Beautiful Day in the Neighborhood",
+      "genre_ids" : [
+        18
+      ],
+      "vote_average" : 7.0999999999999996,
+      "popularity" : 33.048999999999999,
+      "poster_path" : "\/p9vCAVhDK375XyobVcKqzqzsUHE.jpg",
+      "title" : "A Beautiful Day in the Neighborhood",
+      "overview" : "An award-winning cynical journalist, Lloyd Vogel, begrudgingly accepts an assignment to write an Esquire profile piece on the beloved television icon Fred Rogers. After his encounter with Rogers, Vogel's perspective on life is transformed.",
+      "original_language" : "en",
+      "vote_count" : 559,
+      "release_date" : "2019-09-07",
+      "video" : false
+    },
+    {
+      "id" : 503919,
+      "adult" : false,
+      "backdrop_path" : "\/5BmcysaAASA00FM0gRjD0ClMUY9.jpg",
+      "original_title" : "The Lighthouse",
+      "genre_ids" : [
+        18,
+        14,
+        27,
+        9648
+      ],
+      "vote_average" : 7.5999999999999996,
+      "popularity" : 33,
+      "poster_path" : "\/3nk9UoepYmv1G9oP18q6JJCeYwN.jpg",
+      "title" : "The Lighthouse",
+      "overview" : "Two lighthouse keepers try to maintain their sanity while living on a remote and mysterious New England island in the 1890s.",
+      "original_language" : "en",
+      "vote_count" : 1628,
+      "release_date" : "2019-10-18",
+      "video" : false
+    },
+    {
+      "id" : 618344,
+      "adult" : false,
+      "backdrop_path" : "\/sQkRiQo3nLrQYMXZodDjNUJKHZV.jpg",
+      "original_title" : "Justice League Dark: Apokolips War",
+      "genre_ids" : [
+        28,
+        12,
+        16,
+        14,
+        878
+      ],
+      "vote_average" : 8.5,
+      "popularity" : 30.667999999999999,
+      "poster_path" : "\/c01Y4suApJ1Wic2xLmaq1QYcfoZ.jpg",
+      "title" : "Justice League Dark: Apokolips War",
+      "overview" : "Earth is decimated after intergalactic tyrant Darkseid has devastated the Justice League in a poorly executed war by the DC Super Heroes. Now the remaining bastions of good – the Justice League, Teen Titans, Suicide Squad and assorted others – must regroup, strategize and take the war to Darkseid in order to save the planet and its surviving inhabitants.",
+      "original_language" : "en",
+      "vote_count" : 579,
+      "release_date" : "2020-05-05",
+      "video" : false
+    }
+  ],
+  "dates" : {
+    "maximum" : "2020-06-21",
+    "minimum" : "2020-05-04"
+  },
+  "total_pages" : 30,
+  "total_results" : 583,
+  "page" : 1
+}

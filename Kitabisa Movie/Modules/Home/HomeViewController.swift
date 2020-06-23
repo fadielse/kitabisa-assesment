@@ -115,7 +115,7 @@ extension HomeViewController: HomeView {
         removeSpinner()
     }
     
-    func showGetMovieListSuccess() {
+    func showGetMovieListSuccess(withMovieList movieList: [MovieListItem]) {
         tableView.reloadData()
     }
     

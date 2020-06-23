@@ -11,16 +11,10 @@ def common_pods
   pod 'SDWebImage'
 end
 
-def test_pods
-  pod 'Nimble'
-  pod 'Quick'
-end
-
 target 'Kitabisa Movie' do
   common_pods
 end
 
 target 'Kitabisa MovieTests' do
   common_pods
-  test_pods
 end
