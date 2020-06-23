@@ -21,9 +21,6 @@ class MockHomePresenter: HomePresenter {
     }
     
     override func getMovieList(withSelectedCategory selectedCategory: HomeViewController.MovieCategory) {
-        let request = MovieListRequest()
-        request.apiKey = AppConstant.ApiKey
-        
         var jsonFile: String = "200_popular"
         
         switch selectedCategory {
