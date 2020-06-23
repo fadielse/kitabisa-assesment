@@ -21,7 +21,7 @@ protocol HomeView: class {
     func setupView()
     func showLoading()
     func hideLoading()
-    func showGetMovieListSuccess(withMovieList movieList: [MovieListItem])
+    func showGetMovieListSuccess()
     func showGetMovieListFailed(withMessage message: String)
 }
 
@@ -69,7 +69,7 @@ class HomePresenter: HomeViewPresenter {
             if movieListDao.success {
                 if let movieList = movieListDao.movieList?.results {
                     self.movieList = movieList
-                    self.view.showGetMovieListSuccess(withMovieList: movieList)
+                    self.view.showGetMovieListSuccess()
                 } else {
                     self.view.showGetMovieListFailed(withMessage: "Movie list is Empty.")
                 }

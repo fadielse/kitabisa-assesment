@@ -51,22 +51,6 @@ class MovieListItem: Codable {
         self.releaseDate = json["release_date"].string
     }
     
-//    func encode(with coder: NSCoder) {
-//        coder.encode(posterPath, forKey: "poster_path")
-//        coder.encode(id, forKey: "id")
-//        coder.encode(title, forKey: "title")
-//        coder.encode(overview, forKey: "overview")
-//        coder.encode(releaseDate, forKey: "releaseDate")
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        let posterPath = coder.decodeObject(forKey: "posterPath") as! String
-//        let id = coder.decodeInteger(forKey: "id")
-//        let title = coder.decodeObject(forKey: "title") as! String
-//        let overview = coder.decodeObject(forKey: "overview") as! String
-//        let releaseDate = coder.decodeObject(forKey: "releaseDate") as! String
-//    }
-    
     func getPosterPageUrl() -> URL? {
         guard let posterPath = self.posterPath else {
             return nil

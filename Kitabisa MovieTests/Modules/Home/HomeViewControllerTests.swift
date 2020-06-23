@@ -49,7 +49,7 @@ class HomeViewControllerTests: XCTestCase {
 extension HomeViewControllerTests {
     
     func testHas_tableView() {
-        XCTAssertNotNil(viewController?.tableView, "tableView is missing.")
+        XCTAssertNotNil(viewController?.tableView, "tableView not found.")
     }
     
     func testHas_buttonCategory() {

@@ -1,0 +1,90 @@
+{
+  "runtime" : 144,
+  "status" : "Released",
+  "backdrop_path" : "\/bVmSXNgH1gpHYTDyF9Q826YwJT5.jpg",
+  "overview" : "Immediately after the events of The Desolation of Smaug, Bilbo and the dwarves try to defend Erebor's mountain of treasure from others who claim it: the men of the ruined Laketown and the elves of Mirkwood. Meanwhile an army of Orcs led by Azog the Defiler is marching on Erebor, fueled by the rise of the dark lord Sauron. Dwarves, elves and men must unite, and the hope for Middle-Earth falls into Bilbo's hands.",
+  "title" : "The Hobbit: The Battle of the Five Armies",
+  "vote_count" : 9935,
+  "tagline" : "Witness the defining chapter of the Middle-Earth saga",
+  "belongs_to_collection" : {
+    "backdrop_path" : "\/7wO7MSnP5UcwR2cTHdJFF1vP4Ie.jpg",
+    "id" : 121938,
+    "name" : "The Hobbit Collection",
+    "poster_path" : "\/hQghXOjSS2xfzx9XnMyZqt8brCF.jpg"
+  },
+  "original_title" : "The Hobbit: The Battle of the Five Armies",
+  "original_language" : "en",
+  "poster_path" : "\/xT98tLqatZPQApyRmlPL12LtiWp.jpg",
+  "production_countries" : [
+    {
+      "name" : "New Zealand",
+      "iso_3166_1" : "NZ"
+    },
+    {
+      "name" : "United States of America",
+      "iso_3166_1" : "US"
+    }
+  ],
+  "revenue" : 956019788,
+  "homepage" : "https:\/\/www.warnerbros.com\/movies\/hobbit-battle-five-armies\/",
+  "video" : false,
+  "imdb_id" : "tt2310332",
+  "id" : 122917,
+  "release_date" : "2014-12-10",
+  "budget" : 250000000,
+  "popularity" : 92.123000000000005,
+  "genres" : [
+    {
+      "id" : 28,
+      "name" : "Action"
+    },
+    {
+      "id" : 12,
+      "name" : "Adventure"
+    },
+    {
+      "id" : 14,
+      "name" : "Fantasy"
+    }
+  ],
+  "production_companies" : [
+    {
+      "logo_path" : "\/IuAlhI9eVC9Z8UQWOIDdWRKSEJ.png",
+      "id" : 174,
+      "origin_country" : "US",
+      "name" : "Warner Bros. Pictures"
+    },
+    {
+      "logo_path" : "\/6FAuASQHybRkZUk08p9PzSs9ezM.png",
+      "id" : 11,
+      "origin_country" : "NZ",
+      "name" : "WingNut Films"
+    },
+    {
+      "logo_path" : "\/iaYpEp3LQmb8AfAtmTvpqd4149c.png",
+      "id" : 12,
+      "origin_country" : "US",
+      "name" : "New Line Cinema"
+    },
+    {
+      "logo_path" : null,
+      "id" : 7413,
+      "origin_country" : "NZ",
+      "name" : "3Foot7"
+    },
+    {
+      "logo_path" : "\/mjofSXiHpG5t6KYmU4l4FrUhT7m.png",
+      "id" : 21,
+      "origin_country" : "US",
+      "name" : "Metro-Goldwyn-Mayer"
+    }
+  ],
+  "adult" : false,
+  "spoken_languages" : [
+    {
+      "name" : "English",
+      "iso_639_1" : "en"
+    }
+  ],
+  "vote_average" : 7.2999999999999998
+}

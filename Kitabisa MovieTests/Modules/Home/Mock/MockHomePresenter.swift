@@ -43,9 +43,9 @@ class MockHomePresenter: HomePresenter {
             let movieList = MockMovieList(json: dataJson)
             if let movielistResult = movieList?.results {
                 self.movieList = movielistResult
-                self.view.showGetMovieListSuccess(withMovieList: movielistResult)
+                self.showGetMovieListSuccess()
             } else {
-                self.view.showGetMovieListFailed(withMessage: "Movie list is empty.")
+                self.showGetMovieListFailed(withMessage: "Movie list is empty.")
             }
         } else {
             XCTFail("Cannot read json file")
@@ -70,7 +70,7 @@ extension MockHomePresenter: HomeView {
         
     }
     
-    func showGetMovieListSuccess(withMovieList movieList: [MovieListItem]) {
+    func showGetMovieListSuccess() {
         guard let expectation = self.expectationForSuccessRequest else {
             return
         }
