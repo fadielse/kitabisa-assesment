@@ -49,11 +49,8 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTK-Qw-5MM">
                                                                 <rect key="frame" x="0.0" y="0.0" width="246" height="60"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Bond" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRk-SA-3s4">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="95" height="20"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="20" id="Rb2-dK-VdQ"/>
-                                                                        </constraints>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Bond" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRk-SA-3s4">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="198" height="20"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -88,6 +85,7 @@
                                                                     <constraint firstAttribute="trailing" secondItem="cWE-Ir-KNg" secondAttribute="trailing" id="iui-ac-uU5"/>
                                                                     <constraint firstItem="aRk-SA-3s4" firstAttribute="top" secondItem="BTK-Qw-5MM" secondAttribute="top" id="jj5-aY-CUd"/>
                                                                     <constraint firstItem="aRk-SA-3s4" firstAttribute="leading" secondItem="BTK-Qw-5MM" secondAttribute="leading" id="uu5-t0-1b3"/>
+                                                                    <constraint firstItem="DnC-7E-21N" firstAttribute="leading" secondItem="aRk-SA-3s4" secondAttribute="trailing" constant="16" id="wgR-R2-DzW"/>
                                                                     <constraint firstItem="cWE-Ir-KNg" firstAttribute="top" secondItem="aRk-SA-3s4" secondAttribute="bottom" constant="4" id="x0w-pB-FpY"/>
                                                                 </constraints>
                                                             </view>
